@@ -1,0 +1,26 @@
+div{
+    border:1px solid black;
+    height: auto;
+    width: fit-content;
+    background-color: aquamarine;
+}
+
+.name{
+    width: 98%;
+}
+
+h2{
+    text-align: center;
+}
+
+.age,.byear{
+    width: 47%;
+}
+
+.submit{
+    background-color: lightblue;
+}
+
+.cancel{
+    background-color: lightcoral;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <form action="main.php" method="push" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td>
+                        <h2>Registration Form</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="name" name="fname" placeholder="Full name">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="age" class="age" placeholder="Age">
+                        <input type="text" name="byear" class="byear" placeholder="Birth Year">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Hobby:
+                        <input type="checkbox" name="hobby" value="gardening">
+                        Gardening
+                        <input type="checkbox" name="hobby" value="Collecting Stamps">
+                        Collecting Stamps
+                        <input type="Checkbox" name="hobby" value="other">
+                        Other
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Upload your Resume<br>
+                        <input type="file" name="file1" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit" class="submit">
+                        <input type="reset" value="Cancel" class="cancel">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+</body>
+</html>
