@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function display()
+        {
+        if(document.testform.name.value.length < 1)
+        {
+            alert("The entered name is too short or not valid");
+            document.bgColor="red";
+
+        }
+
+        if(document.testform.name.value.length > 1)
+        {
+            alert("Details updated successfully !");
+
+            document.getElementById('namedisplay').innerHTML = 
+            document.getElementById("name").value;
+        }
+
+        
+        }
+        
+    </script>
+</head>
+<body>
+    <Form name="testform">
+        <label for="name">Name:</label>
+        <Input type="text" id="name" maxlength="10">
+        <input type="submit" value="Submit" onclick="display()">
+        <p id="namedisplay"></p>
+    </Form>
+    
+</body>
+</html>

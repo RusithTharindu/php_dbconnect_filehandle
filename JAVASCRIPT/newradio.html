@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<form action="">
+
+  <input type="radio" id="male" value="Male" name="gen">Male <br>
+  <input type="radio" id="female" value="Female" name="gen">Female <br>
+ 
+  <input type="submit" value="submit" onclick="btn()">
+
+</form> 
+
+
+   <script>
+    
+    function btn() {
+    var gen1 =  document.getElementById('male');
+    var gen2 =  document.getElementById('female');
+    
+    
+
+    if(!gen1.checked == true && !gen2.checked == true){
+        alert('Select one');
+    
+    }
+    
+    }
+     
+ 
+
+   </script>
+</body>
+</html>

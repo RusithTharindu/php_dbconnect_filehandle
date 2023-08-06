@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        Rugby
+        <input type="checkbox" name="sport" id="rugby">
+        <br>
+        Football
+        <input type="checkbox" name="sport" id="football">
+        <br>
+        Cricket
+        <input type="checkbox" name="sport" id="cricket">
+        <br>
+        <input type="submit" value="Submit" onclick="check()">
+
+    </form>
+
+    <script>
+        function check(){
+            var sp1 = document.getElementById('rugby');
+            var sp2 = document.getElementById('football');
+            var sp3 = document.getElementById('cricket');
+
+            if(!sp1.checked == true && !sp2.checked == true && !sp3.checked == true){
+                alert("Select one");
+            }
+        }
+
+    </script>
+</body>
+</html>

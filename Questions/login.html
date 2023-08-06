@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <form action="" id="myform">
+        <div class="header">
+            <h3>Login</h3>
+            See whats going on in your College today
+            <br>
+            
+
+        </div >
+
+        <div class="footer">
+            <table>
+            <tr>
+                <td>
+                    Login as
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="login" class="login" id="login">
+                        <option value="">Select login type</option>
+                        <option value="student">Student</option>
+                        <option value="Staff">Staff</option>
+                    </select>
+                    
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    USN
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="usn" class="usn" placeholder="USN" maxlength="10" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" name="pass" class="pass" id="pass" placeholder="Password" required>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Login" class="submit" onclick="validation()">
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <a href="new.html" class="a"><span class="forget">Forgot</span> password?</a>
+                    
+                </td>
+            </tr>
+        </table>
+
+        </div>
+            
+    </form>
+
+    <script>
+
+    function validation(){
+
+    const selectoption = document.getElementById('login');
+    const selectvalue = selectoption.value;
+    if(selectvalue == ""){
+        window.alert("Select student or staff login");
+    }
+
+    const pass = document.getElementById('pass');
+    if(pass.value.length < 6){
+        window.alert("Enter a password longer than 6 characters");
+    }
+
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <select name="eat" id="eat">
+            <option value="">-Select-</option>
+            <option value="vegan" id="vegan">Vegan</option>
+            <option value="nonveg" id="nonveg">Non-veg</option>
+        </select>
+        <input type="submit" value="Submit" onclick="drop()">
+    </form>
+    <script>
+        function drop(){
+            var selection = document.getElementById('eat');
+            var value = selection.value;
+
+            if(selection.value == ""){
+                alert("select one");
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>

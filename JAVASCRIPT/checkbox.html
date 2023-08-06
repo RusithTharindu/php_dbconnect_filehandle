@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkbox Validation</title>
+</head>
+<body>
+
+  <form>
+    <input type="checkbox" name="hobby" value="reading"> Reading
+    <input type="checkbox" name="hobby" value="painting"> Painting
+    <input type="checkbox" name="hobby" value="cooking"> Cooking
+    <br>
+    <button type="button" onclick="validateCheckboxes()">Submit</button>
+  </form>
+
+  <script>
+    function validateCheckboxes() {
+      // Get all checkboxes with the name "hobby"
+      const checkboxes = document.getElementsByName('hobby');
+      let checked = false;
+
+      // Check if any of the checkboxes are checked
+      for (let i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+          checked = true;
+          break;
+        }
+      }
+
+      // If none of the checkboxes are checked, display an alert box
+      if (!checked) {
+        alert("Please select at least one hobby.");
+      }
+    }
+  </script>
+
+</body>
+</html>

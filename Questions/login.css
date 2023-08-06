@@ -1,0 +1,39 @@
+.header{
+    border: 1px solid black;
+    height: auto;
+    width: 460px;
+    background-color: green;
+    color: white;
+    
+   
+}
+.footer{
+    border: 1px solid black;
+    height: auto;
+    width: 460px;
+
+}
+
+
+.login,.submit{
+    width: 450px;
+}
+.usn,.pass{
+    width: 442px;
+}
+
+.submit{
+    background-color: green;
+    color: azure;
+}
+
+.a{
+    margin-left: 150px;
+}
+
+.forget{
+    color: black;
+}
+a{
+    float: right;
+}

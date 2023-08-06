@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Select Validation</title>
+</head>
+<body>
+
+  <form>
+    <label for="country">Select your country:</label>
+    <select name="country" id="country">
+      <option value="">-- Select Country --</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="canada">Canada</option>
+    </select>
+    <br>
+    <button type="button" onclick="validateSelect()">Submit</button>
+  </form>
+
+  <script>
+    function validateSelect() {
+      // Get the <select> element by its ID
+      const selectElement = document.getElementById('country');
+
+      // Get the selected value of the <select> element
+      const selectedValue = selectElement.value;
+
+      // Check if a valid option is selected
+      if (selectedValue === "") {
+        alert("Please select a country.");
+      }
+    }
+  </script>
+
+</body>
+</html>

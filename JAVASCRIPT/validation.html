@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document Validation in JS</title>
+    <script>
+        function validation()
+        {
+            if(document.myform.name1.value.length < 2){
+                name = alert("Name characters are not sufficient!");
+            return;
+            }
+
+            if(document.myform.address.value.length < 3){
+                address = alert("Your address doesnt contain sufficient characters!");
+            }
+
+            if( document.myform.name1.value.length > 2 && document.myform.address.value.length > 3){
+                alert("Input updated successfully !");
+
+                <!--Displaying inputs--> 
+                
+                document.getElementById('displayname').innerHTML = 
+                document.getElementById("name").value ;
+
+                document.getElementById('displayaddress').innerHTML = 
+                document.getElementById("address").value;
+            }
+                
+
+            
+
+        }
+        
+
+    </script>
+</head>
+<body>
+    <form name="myform">
+        <p>Name:</p><br>
+        <input type="textbox" name="name1" maxlength="10" id="name"> <br>
+        <p>Address</p> <br>
+        <input type="textbox" name="address" maxlength="30" id="address">
+        <input type="button" value="Submit" onclick="validation()">
+        
+        <p id="displayname"></p>
+        <p id="displayaddress"></p>
+
+
+
+        
+
+    </form>
+</body>
+</html>
