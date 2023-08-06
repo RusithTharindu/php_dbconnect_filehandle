@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Form</title>
+    <script>
+        function mouseclick()
+        {
+            
+            if(document.myform.fname.value.length < 1 )
+            {
+                alert("Enter your name correctly");
+                return;
+            }
+
+            if(document.myform.age.value.length < 1 )
+            {
+                alert("Enter your age correctly");
+                return;
+            }
+            if(document.myform.byear.value.length < 1 )
+            {
+                alert("Enter your birth year correctly");
+                return;
+            }
+            if(document.myform.email.value.length < 1 )
+            {
+                alert("Enter your email correctly");
+                return;
+            }
+
+        }
+    </script>
+    <style>
+        div{
+            border: 1px solid black;
+            width: fit-content;
+            height: auto;
+            background-image: url(image.jpg);
+            background-size: cover;       
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <div>
+        <form action="main.php" method="post" name="myform">
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" name="fname" placeholder="Full Name" style="width: 98%;" maxlength="200">
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="age" placeholder="Age" maxlength="20">
+                        <input type="text" name="byear" placeholder="Birth Year" maxlength="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="email" style="width: 98%;" placeholder="Email" maxlength="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender:
+                        <input type="radio" name="gender" value="Male" >
+                        Male
+                        <input type="radio" name="gender" value="Female">
+                        Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="Submit" name="submit" value="Submit" style="background-color: lightblue;" onclick="mouseclick()">
+                        <input type="reset" name="reset" value="Cancel" style="background-color: red;">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+</body>
+</html>
