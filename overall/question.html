@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registation form</title>
+    <link rel="stylesheet" href="question.css">
+</head>
+<body>
+    <center><div>
+        <form action="question.php" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <h1>Registration Form</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="fname"></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="lname"></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number</td>
+                    <td><input type="text" name="mno"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="Male">
+                        Male
+                        <input type="radio" name="gender" value="Female">
+                        Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Favourite Music</td>
+                    <td>
+                        <input type="checkbox" name="fav[]" value="POP" >
+                        POP
+                        <input type="checkbox" name="fav[]" value="Rock" >
+                        Rock
+                        <input type="checkbox" name="fav[]" value="Other">
+                        Other
+                    </td>
+                </tr>
+                <tr>
+                    <td>Additional Details</td>
+                    <td >
+                        <textarea name="detail" id="" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="agree">
+                        I agree to the terms and conditions
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="submit" value="Submit"></td>
+                    <td>
+                        <input type="reset">
+                    </td>
+                </tr>
+
+
+            </table>
+        </form>
+    </div></center>
+</body>
+</html>
